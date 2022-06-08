@@ -1,0 +1,5 @@
+django==4.0.5
+gtts==2.2.4
+pip==22.1.2
+django-debug-toolbar==3.4.0
+pdfminer==20191125

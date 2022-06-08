@@ -1,0 +1,31 @@
+html {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #fff;
+}
+
+.hero.is-primary .title, .form-label {
+    color: #ffcc80;
+}
+
+.h3, h3 {
+    color: #76ff03;
+}
+
+.form-control, .form-select {
+    width: 100%;
+}
+
+.mb-0 {
+    position: absolute;
+    top: 47%;
+    left: 54%;
+    margin: -100px 0 0 -200px; /* отступы равны половинным размера формы */
+    z-index: 9999; /* чтобы форма была поверх всех элементов страницы */
+}

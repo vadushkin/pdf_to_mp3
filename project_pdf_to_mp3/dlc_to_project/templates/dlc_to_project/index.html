@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+{{ title }}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="mb-0">
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="mb-2">
+            <h4><label for="formFileSm" class="form-label">Файл:</label></h4>
+            <input class="form-control form-control-sm" id="formFileSm" type="file" name="my_file">
+            <h4><label for="formFileSm" class="form-label">Язык:</label></h4>
+            <select class="form-select" size="1" aria-label="size 1 select example" name="lng">
+                {% for lg in list_lg %}
+                <option value="{{ lg }}">{{ lg }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Выполнить</button>
+    </form>
+    <div class="mb-2">
+    </div>
+    {% if message %}
+    <h3><label for="formFileSm" class="form-label2">{{ message }}</label></h3>
+    {% endif %}
+</div>
+
+{% endblock %}
