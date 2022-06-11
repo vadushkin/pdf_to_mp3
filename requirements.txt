@@ -9,7 +9,7 @@ gTTS==2.2.4
 idna==3.3
 pdfminer==20191125
 pycryptodome==3.14.1
-requests==2.28.0
+requests==2.27.0
 six==1.16.0
 sqlparse==0.4.2
 tzdata==2022.1
